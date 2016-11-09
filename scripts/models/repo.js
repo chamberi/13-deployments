@@ -4,8 +4,8 @@
   reposObj.requestRepos = function(callback) {
     // NOTE: refactor this request into an $.get call
     $.when(
-    $.get(''),
-    $.get('')
+    $.get('/github/users/chamberi/repos'),
+    $.get('/github/users/chamberi/followers')
     ).done(callback);
   };
 
